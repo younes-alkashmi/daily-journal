@@ -1,0 +1,126 @@
+:root {
+  box-sizing: border-box;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+header {
+  background-color: #ddd;
+  /* max-height: 80px; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  color: #333;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+nav ul {
+  display: flex;
+  width: 30%;
+  list-style-type: none;
+  justify-content: space-around;
+  letter-spacing: 1px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  transition-duration: 300ms;
+}
+
+nav ul li a:hover {
+  color: #069A8E;
+}
+
+.container {
+  padding: 10px 20px;
+}
+
+.compose-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  justify-content: space-around;
+}
+.compose-form input[type="text"]{
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.compose-form textarea{
+  padding: 10px;
+}
+.compose-form button{
+  width: 80px;
+  height: 40px;
+  color: white;
+  background-color: #069A8E;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.compose-btn {
+  margin-bottom: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  color: white;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+p {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.delete-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  background-color: #EB5353;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 10px;
+}
+body{
+  margin: 0 0 60px;
+ /* bottom = footer height */
+}
+footer {
+  text-align: center;
+  background-color: #069A8E;
+  color: white;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  overflow:hidden;
+}
